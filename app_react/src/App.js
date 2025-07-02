@@ -18,6 +18,13 @@ function App() {
             <button className='btn-enviar' onClick={mostrarMensaje}>🎁</button>
             <p>{mensaje}</p>
           </div>
+
+                    {mensaje && (
+            <video width="400" controls autoPlay style={{ marginTop: '20px' }}>
+              <source src="/troleo.mp4" type="video/mp4" />
+              Tu navegador no soporta el video.
+            </video>
+          )}
       
       </header>
     </div>
